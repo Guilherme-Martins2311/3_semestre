@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interativa</title>
+</head>
+<body>
+    <h1>DOM: Página Interativa com JavaScript</h1>
+
+    <button onclick="somar()">Incrementar</button>
+    <button onclick="subtrair()">Decrementar</button>
+
+    <p id="numero">0</p>
+
+    <input type="text" id="texto" placeholder="Digite algo...">
+    <p id="contagem">0 caracteres</p>
+
+    <div id="listaTexto"></div>
+
+    <p>
+        Escolha o tipo de lista:
+        <select id="tipo">
+            <option value="ul">Lista Não Ordenada</option>
+            <option value="ol">Lista Ordenada</option>
+        </select>
+        <button onclick="criarLista()">Adicionar Lista</button>
+    </p>
+
+    <div id="listas"></div>
+
+    <button onclick="resetar()">Resetar Tudo</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
